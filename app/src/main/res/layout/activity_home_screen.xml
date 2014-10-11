@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addDailyExpense"
+        android:id="@+id/addDailyExpenseButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/transparent"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addMonthlyExpense"
+        android:id="@+id/addMonthlyExpenseButton"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/addDailyExpenseButton"
+        android:layout_alignLeft="@+id/addDailyExpenseButton"
+        android:layout_alignStart="@+id/addDailyExpenseButton"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/generateReport"
+        android:id="@+id/generateReportButton"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/addMonthlyExpenseButton"
+        android:layout_alignLeft="@+id/addMonthlyExpenseButton"
+        android:layout_alignStart="@+id/addMonthlyExpenseButton"
+        android:background="@android:color/transparent"
+        style="?android:attr/borderlessButtonStyle"/>
+
+</RelativeLayout>
